@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ملك">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0D98A"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.35" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#6C3FA0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0D0B12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#0D0B12"/>
+  <rect width="64" height="64" rx="15" fill="url(#glow)"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#D4AF37" stroke-opacity="0.35"/>
+  <text x="32" y="46" text-anchor="middle" font-family="Tajawal, Arial, sans-serif" font-size="35" font-weight="700" fill="url(#gold)">م</text>
+</svg>

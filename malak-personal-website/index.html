@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ملك عبدالسلام زايدة | Personal Portfolio</title>
+  <meta name="description" content="الموقع الشخصي لملك عبدالسلام زايدة — مساحة تعرض الشغف بالإبداع والتصميم والتقنيات الحديثة، مع المهارات ووسائل التواصل.">
+  <meta name="author" content="ملك عبدالسلام زايدة">
+  <meta name="theme-color" content="#0D0B12">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ملك عبدالسلام زايدة | Personal Portfolio">
+  <meta property="og:description" content="مساحة شخصية تجمع الإبداع والتصميم والتقنيات الحديثة.">
+  <meta property="og:locale" content="ar_AR">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      var theme = 'dark';
+      try {
+        var saved = localStorage.getItem('malak-theme');
+        if (saved === 'light' || saved === 'dark') theme = saved;
+      } catch (error) {}
+      root.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!--
+    موقع شخصي من صفحة واحدة.
+    • بيانات التواصل: assets/js/main.js (كائن SITE)
+    • الألوان والخطوط: assets/css/styles.css (قسم :root)
+    • النصوص: الأقسام أدناه
+  -->
+
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="cosmos">
+      <span class="cosmos__nebula cosmos__nebula--1"></span>
+      <span class="cosmos__nebula cosmos__nebula--2"></span>
+      <span class="cosmos__nebula cosmos__nebula--3"></span>
+      <span class="cosmos__orbit cosmos__orbit--1"></span>
+      <span class="cosmos__orbit cosmos__orbit--2"></span>
+      <canvas class="cosmos__stars" data-starfield></canvas>
+      <span class="cosmos__dust"></span>
+    </div>
+    <span class="ambient__orb ambient__orb--purple"></span>
+    <span class="ambient__orb ambient__orb--gold"></span>
+    <span class="ambient__grain"></span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">م</span>
+        <span class="brand__text">
+          <span class="brand__name" data-name>ملك</span>
+          <span class="brand__sub">Portfolio</span>
+        </span>
+      </a>
+
+      <nav aria-label="التنقل الرئيسي">
+        <ul class="nav__menu" id="primary-menu">
+          <li><a class="nav__link is-active" href="#home">الرئيسية</a></li>
+          <li><a class="nav__link" href="#about">نبذة عني</a></li>
+          <li><a class="nav__link" href="#skills">مهاراتي</a></li>
+          <li><a class="nav__link" href="#contact">تواصل معي</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="التبديل إلى الوضع النهاري" title="الوضع الليلي">
+        <span class="theme-toggle__icons" aria-hidden="true">
+          <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </span>
+        <span class="theme-toggle__tip" data-theme-tip aria-hidden="true">الوضع الليلي</span>
+      </button>
+
+      <button class="nav__toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="primary-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ الرئيسية ============ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <span class="hero__watermark" aria-hidden="true">إبداع</span>
+
+      <div class="hero__rings" aria-hidden="true">
+        <span class="hero__ring hero__ring--1"></span>
+        <span class="hero__ring hero__ring--2"></span>
+        <span class="hero__ring hero__ring--3"></span>
+        <span class="hero__ring-dot hero__ring-dot--1"></span>
+        <span class="hero__ring-dot hero__ring-dot--2"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="kicker">Personal Portfolio</span>
+          <p class="hero__welcome">مرحباً بك في مساحتي الشخصية</p>
+
+          <div class="hero__name-wrap">
+            <h1 class="hero__name" id="hero-title" data-full-name>ملك عبدالسلام زايدة</h1>
+            <span class="hero__name-stars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </span>
+          </div>
+
+          <p class="hero__role">مصممة واجهات وتجارب رقمية</p>
+
+          <p class="hero__desc">أهتم بالإبداع والتصميم والتقنيات الحديثة، وأسعى دائماً إلى تطوير مهاراتي وتحويل الأفكار إلى تجارب مميزة.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#about">
+              تعرّف عليّ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">تواصل معي</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="مجالات الاهتمام">
+            <li>تصميم</li>
+            <li>ذكاء اصطناعي</li>
+            <li>تجربة مستخدم</li>
+          </ul>
+        </div>
+
+        <div class="hero__art">
+          <div class="art" aria-hidden="true">
+            <span class="art__halo"></span>
+            <span class="art__orbit art__orbit--1"></span>
+            <span class="art__orbit art__orbit--2"></span>
+            <span class="art__spark art__spark--1"></span>
+            <span class="art__spark art__spark--2"></span>
+            <span class="art__spark art__spark--3"></span>
+
+            <div class="art__frame">
+              <div class="art__inner">
+                <span class="art__monogram">M</span>
+                <span class="art__label">MALAK</span>
+                <span class="art__sub">PERSONAL PORTFOLIO</span>
+              </div>
+            </div>
+
+            <div class="art__badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9L12 2z"/></svg>
+              <span>إبداع × تصميم × تقنية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="اكتشف — الانتقال إلى قسم نبذة عني">
+        <span>اكتشف</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- شريط الكلمات المتحرك -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">التصميم الجرافيكي</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">الهوية البصرية</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">أدوات الذكاء الاصطناعي</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">تحرير الصور والفيديو</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">واجهات UI/UX</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">كتابة المحتوى</span><span class="marquee__sep">✦</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">التصميم الجرافيكي</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">الهوية البصرية</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">أدوات الذكاء الاصطناعي</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">تحرير الصور والفيديو</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">واجهات UI/UX</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">كتابة المحتوى</span><span class="marquee__sep">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-beam" aria-hidden="true"></div>
+
+    <!-- ============ نبذة عني ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__text">
+            <span class="kicker">About Me</span>
+            <h2 class="section-title" id="about-title">من <span class="grad-gold">أنا؟</span></h2>
+          </div>
+          <span class="section-head__num" aria-hidden="true">01</span>
+        </header>
+
+        <div class="about__panel" data-reveal>
+          <span class="about__quote" aria-hidden="true">”</span>
+
+          <div class="about__text">
+            <p>أنا شخص <em class="hl">شغوف</em> بـ<em class="hl hl--purple">الإبداع</em> و<em class="hl">التصميم</em> واكتشاف <em class="hl hl--purple">التقنيات الحديثة</em>، وأسعى دائماً إلى تطوير قدراتي ومهاراتي.</p>
+            <p>أهتم بتوظيف <em class="hl">الأفكار الإبداعية</em> وأدوات <em class="hl hl--purple">الذكاء الاصطناعي</em> في ابتكار أعمال تجمع بين <em class="hl">الجمال</em> و<em class="hl">الوظيفة</em>.</p>
+            <p>أطمح إلى خوض تجارب جديدة، وتوسيع معارفي، وتحويل شغفي إلى <em class="hl hl--purple">إنجازات ملموسة</em>.</p>
+          </div>
+
+          <ul class="about__tags" aria-label="كلمات مفتاحية">
+            <li class="tag">إبداع</li>
+            <li class="tag">تصميم</li>
+            <li class="tag">ذكاء اصطناعي</li>
+            <li class="tag">محتوى</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-beam" aria-hidden="true"></div>
+
+    <!-- ============ مهاراتي ============ -->
+    <section id="skills" class="section section--band" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__text">
+            <span class="kicker">My Skills</span>
+            <h2 class="section-title" id="skills-title"><span class="grad-gold">مهاراتي</span></h2>
+          </div>
+          <span class="section-head__num" aria-hidden="true">02</span>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill" data-reveal>
+            <div class="skill__top">
+              <span class="skill__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </span>
+              <span class="skill__num" aria-hidden="true">01</span>
+            </div>
+            <h3>التصميم الجرافيكي</h3>
+            <p>ابتكار التصاميم والإعلانات والهويات البصرية.</p>
+          </article>
+
+          <article class="skill" data-reveal>
+            <div class="skill__top">
+              <span class="skill__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
+              </span>
+              <span class="skill__num" aria-hidden="true">02</span>
+            </div>
+            <h3>أدوات الذكاء الاصطناعي</h3>
+            <p>توظيف أدوات AI في التصميم والإنتاج الإبداعي.</p>
+          </article>
+
+          <article class="skill" data-reveal>
+            <div class="skill__top">
+              <span class="skill__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="2.2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
+              </span>
+              <span class="skill__num" aria-hidden="true">03</span>
+            </div>
+            <h3>تحرير الصور والفيديو</h3>
+            <p>معالجة الصور وإنتاج وتحرير المحتوى المرئي.</p>
+          </article>
+
+          <article class="skill" data-reveal>
+            <div class="skill__top">
+              <span class="skill__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </span>
+              <span class="skill__num" aria-hidden="true">04</span>
+            </div>
+            <h3>تصميم واجهات المواقع</h3>
+            <p>الاهتمام بتجربة المستخدم وتصميم واجهات UI/UX.</p>
+          </article>
+
+          <article class="skill" data-reveal>
+            <div class="skill__top">
+              <span class="skill__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </span>
+              <span class="skill__num" aria-hidden="true">05</span>
+            </div>
+            <h3>الإبداع وكتابة المحتوى</h3>
+            <p>تطوير الأفكار وصياغة المحتوى بطريقة جذابة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-beam" aria-hidden="true"></div>
+
+    <!-- ============ تواصل معي ============ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__text">
+            <span class="kicker">Contact</span>
+            <h2 class="section-title" id="contact-title">لنتواصل <span class="grad-gold">معاً</span></h2>
+          </div>
+          <span class="section-head__num" aria-hidden="true">03</span>
+        </header>
+
+        <div class="contact" data-reveal>
+          <div class="contact__main">
+            <p class="contact__lead">يسعدني التواصل معك، ومناقشة الأفكار والمشاريع والفرص الإبداعية.</p>
+
+            <div class="email-box">
+              <div class="email-box__head">
+                <span class="email-box__label">البريد الإلكتروني</span>
+                <button class="copy-btn" type="button" data-copy-email aria-label="نسخ البريد الإلكتروني">
+                  <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
+                </button>
+              </div>
+              <a class="email-box__address" data-email-link href="mailto:ooplooqalm19854@gmail.com">
+                <span data-email>ooplooqalm19854@<wbr>gmail.com</span>
+              </a>
+            </div>
+
+            <div class="contact__actions">
+              <a class="btn btn--gold" data-email-link href="mailto:ooplooqalm19854@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                أرسل رسالة بريدية
+              </a>
+              <p class="contact__note">سيُفتح تطبيق البريد لديك مباشرة.</p>
+            </div>
+
+            <span class="sr-only" role="status" aria-live="polite" data-copy-status></span>
+          </div>
+
+          <aside class="contact__aside" aria-label="رقم الجوال">
+            <span class="kicker contact__aside-kicker">Direct Line</span>
+            <h3 class="contact__aside-title">تواصل مباشر</h3>
+            <p class="contact__aside-text">يسعدني اتصالك أو رسالتك على الرقم التالي.</p>
+
+            <a class="phone-link" href="tel:+966570603491" data-phone-link>
+              <span class="phone-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span class="phone-link__number" dir="ltr" data-phone>+966 57 060 3491</span>
+              <span class="phone-link__hint">اضغط للاتصال</span>
+            </a>
+
+            <div class="phone-actions">
+              <a class="btn btn--ghost btn--sm" href="tel:+966570603491" data-phone-link>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                اتصل الآن
+              </a>
+              <button class="copy-btn copy-btn--phone" type="button" data-copy-phone aria-label="نسخ رقم الجوال">
+                <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
+              </button>
+            </div>
+
+            <p class="contact__aside-note">أو راسلني على البريد الإلكتروني.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ التذييل ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="brand brand--footer" href="#home">
+          <span class="brand__mark" aria-hidden="true">م</span>
+          <span class="brand__text">
+            <span class="brand__name" data-name>ملك</span>
+            <span class="brand__sub">Portfolio</span>
+          </span>
+        </a>
+
+        <p class="footer__tagline"><span aria-hidden="true">✦</span> صُنع بشغف وإبداع</p>
+
+        <nav class="footer__nav" aria-label="روابط التذييل">
+          <a href="#about">نبذة عني</a>
+          <a href="#skills">مهاراتي</a>
+          <a href="#contact">تواصل معي</a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 جميع الحقوق محفوظة.</p>
+        <p class="footer__name" data-name>ملك</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="العودة إلى أعلى الصفحة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <canvas class="cursor-canvas" aria-hidden="true"></canvas>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
